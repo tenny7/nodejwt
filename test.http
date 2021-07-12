@@ -1,0 +1,12 @@
+
+
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6InRlbm55IiwiZW1haWwiOiJ0ZW5ueUBnbWFpbC5jb20ifSwiaWF0IjoxNjI2MDc2NzQzfQ.0nuWNm6TuNDCgBwH-WcPcBuv3fl3nYaCJLA1GwB0h8o
+POST http://localhost:5000/api/login
+Content-Type: application/json
+
+
+###
+
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer {{ token }}
